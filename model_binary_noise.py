@@ -129,7 +129,6 @@ def ChebyshevApprox(f, n):  # assuming f : [0, pi] -> R
     return c
 
 # function for pre-processing
-# This is the original Dong Bin or Xuebin Zheng's version.  I think it does not match the paper as it is in reverse way for level
 # Please refer to the "corrected" version get_operator2
 def get_operator(L, DFilters, n, s, J, Lev):
     r = len(DFilters)
@@ -154,7 +153,6 @@ def get_operator(L, DFilters, n, s, J, Lev):
 
     return d
 
-# function for pre-processing;  Junbin's new version
 def get_operator2(L, DFilters, n, s, J, Lev):
     r = len(DFilters)
     c = [None] * r
